@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Bussola</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="compass-wrapper">
+            <div class="compass-rose" id="compassRose">
+                <div class="compass-face">
+                    <div class="compass-markings">
+                        <div class="marking marking-n">N</div>
+                        <div class="marking marking-e">E</div>
+                        <div class="marking marking-s">S</div>
+                        <div class="marking marking-w">W</div>
+                    </div>
+                    <div class="compass-needle">
+                        <div class="needle needle-north"></div>
+                        <div class="needle needle-south"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="info-panel">
+            <div class="degree-display">
+                <span class="degree-value" id="degreeValue">0°</span>
+            </div>
+            <div class="direction-display">
+                <span class="direction-text" id="directionText">N</span>
+            </div>
+            <div class="coordinates">
+                <div class="coordinate-item">
+                    <span class="coordinate-label">Latitudine</span>
+                    <span class="coordinate-value" id="latitude">--</span>
+                </div>
+                <div class="coordinate-item">
+                    <span class="coordinate-label">Longitudine</span>
+                    <span class="coordinate-value" id="longitude">--</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="permission-message" id="permissionMessage">
+            <p>Questa app richiede l'accesso all'orientamento del dispositivo.</p>
+            <p>Assicurati di essere su HTTPS o localhost.</p>
+            <button class="permission-button" id="permissionButton" style="display: none;">Abilita Bussola</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
